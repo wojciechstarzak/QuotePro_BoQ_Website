@@ -1,0 +1,174 @@
+
+
+/*Reset for DNN7 */
+ul ul, ul ol, ol ol, ol ul { margin-left:0px; margin-bottom:0px; }
+
+body, nav, ul, li, a  { margin: 0; padding: 0; }
+body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+a { text-decoration: none; }
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+    
+.toggleMenu {
+     display:none;
+     padding: 5px 38px 4px 38px;
+     background: #fff; opacity:.8; filter: alpha(opacity = 80);
+     background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#bbbaba));
+     background: -webkit-linear-gradient(#fff, #bbbaba);
+     background: -moz-linear-gradient(#fff, #bbbaba);
+     background: -ms-linear-gradient(#fff, #bbbaba);
+     background: -o-linear-gradient(#fff, #bbbaba);
+     background: linear-gradient(#fff, #bbbaba);
+     -pie-background: linear-gradient(#fff, #bbbaba);
+	 -webkit-border-radius:0 0 10px 10px; -moz-border-radius:0 0 10px 10px; border-radius:0 0 10px 10px;
+	 -webkit-box-shadow: #0c1113 2px 2px 2px; -moz-box-shadow: #0c1113 2px 2px 2px; box-shadow: #0c1113 2px 2px 2px;
+    border-radius:3px; -webkit-border-radius:3px; -mox-border-radius:3px;
+    border:2px solid #175ea1;
+    behavior:url("/Portals/_default/Skins/Demophon/PIE.htc");position:relative;  
+}
+
+.toggleMenu img { margin-top:-3px; }
+a.toggleMenu { font-size:24px; color: #fff; white-space: nowrap; }
+a.toggleMenu:hover { text-decoration:none; }
+
+.nav {
+    list-style: none;
+     *zoom: 1;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul { 
+    background:#fff; opacity: 0.9; filter: alpha(opacity =90); -moz-box-shadow: 2.5px 2.5px 5px #bbbaba; -webkit-box-shadow: 2.5px 2.5px 5px #bbbaba; box-shadow: 2.5px 2.5px 5px #bbbaba;
+     background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#bbbaba));
+     background: -webkit-linear-gradient(#fff, #bbbaba);
+     background: -moz-linear-gradient(#fff, #bbbaba);
+     background: -ms-linear-gradient(#fff, #bbbaba);
+     background: -o-linear-gradient(#fff, #bbbaba);
+     background: linear-gradient(#fff, #bbbaba);
+     -pie-background: linear-gradient(#fff, #bbbaba);
+    list-style: none; border-bottom:none !important;
+    width: 9em; behavior:url("/Portals/_default/Skins/Demophon/PIE.htc"); position:relative; 
+}
+
+.nav ul li ul { margin-top:0px; }
+
+
+/*** Edit MainMenu Width ***/
+.nav a {
+   text-decoration:none; font-size:18px; font-family:'oswald',Tahoma; padding:8px 10px; font-weight:normal; line-height:20px; display:block;
+}
+
+/*** Edit Nav Text Color Code ***/
+.nav > li > a { color:#666; }
+.nav > li:last-of-type a { }
+
+/*** Edit Nav Hover Code ***/
+.nav > li > a:hover { color:#1871AC; }
+.nav li:hover > a { color:#1871AC; }
+
+
+/*** Edit Current SubMenu Hover Code ***/
+.nav .current > a, 
+.nav .current > a:visited { color:#1871AC; }
+
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left; list-style:none;
+}
+.sf-sub-indicator { display:none; }
+
+/**** Edit Menu Indicator Padding Code ****/
+.nav > li > .parent {
+    background: url("subArrowTop.png") no-repeat;
+    background-position: right;
+}
+.nav > li > a { display: block; }
+
+.nav li ul {
+    min-width:16em; /**** Edit Width ****/
+    position: absolute;
+    left: -9999px;
+}
+
+/**** Edit MenuTop Margin Code ****/
+.nav > li > ul { margin-top:0px; }
+
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li { list-style:none; }
+
+ 
+/*** Edit SubMenu Code ***/
+.nav li li a {
+    display: block; line-height:20px; padding-top:6px; padding-bottom:10px;
+    position: relative; z-index:100;
+    font-family:'titillium',Tahoma; color:#1e1e1e; font-weight:normal; font-size:14px; border-bottom:1px solid #f7f6f6;
+}
+
+/*** Edit SubMenu Hover Code ***/
+.nav li li a:hover { display: block; background:#f6f5f5; color:#000; box-shadow:none; }
+
+.nav ul li .parent { background-image: url("subArrow.png") !important; background-repeat: no-repeat; background-position: 95% 50%; }
+.nav ul li .parent:hover { background-image: url("subArrow.png") !important; background-repeat: no-repeat; background-position: 95% 50%; }
+
+.nav .current ul li .parent { background-image: url("subArrow.png"); background-repeat: no-repeat; background-position: 95% 50%; }
+.nav .current ul li .parent:hover { background-image: url("subArrow.png"); background-repeat: no-repeat; background-position: 95% 50%; }
+
+@media screen and (max-width:970px) { .nav a { font-size:16px; } }
+@media screen and (max-width:920px) { .nav a { padding:8px 9px; font-size:15px; } }
+@media screen and (max-width:850px) { .nav a { padding:8px 8px; font-size:14px; } }
+
+@media screen and (max-width:767px) {  
+    .active { display: block; }    
+    .nav > li { float: none; }
+    .nav > li > .parent { background-position: 95% 50%; }
+    .nav li li .parent { background-image: url("downArrow.png"); background-repeat: no-repeat; background-position: 95% 50%; }
+    .nav ul { display: block; width: 100%; }
+    .nav > li.hover > ul , .nav li li.hover ul { position: static; }
+    
+    /**** Edit Code ****/
+    .nav a { padding: 10px 9px; }  
+    .nav > li > .parent { margin-right:9px; }
+}
+
+@media screen and (max-width: 767px) {
+    
+    /**** Edit Code ****/
+    .nav ul { background:none; }
+    .nav { margin-top:5px; color:inherit; }
+    .nav a { padding-left:15px; border-top:none; font-size:16px; margin-bottom:2px; background:#3a3a3a; line-height:18px; color:inherit; } 
+    .nav .current > a, .nav .current > a:visited { background:#4b8dca; color:inherit; }
+    .nav > li > a { border-right:none; }
+    
+    .nav > li > .parent { background-image: url("downArrowMbl.png") !important; background-repeat: no-repeat; background-position: 95% 50%; margin-right:0px; }   
+    .nav > li > .parent:hover { background-image: url("downArrowMbl.png") !important; background-repeat: no-repeat; background-position: 95% 50%; margin-right:0px; }   
+    
+    .nav li li a { font-size:14px; line-height:22px; border:none; }
+    .nav li li li a { margin-left:0px; font-size:14px; }
+
+    .nav li ul { min-width:10em; }
+	.nav > li > ul { margin-top:0px; }
+}
+
+.MenuCenter { text-align:center; }
+
+
+
+

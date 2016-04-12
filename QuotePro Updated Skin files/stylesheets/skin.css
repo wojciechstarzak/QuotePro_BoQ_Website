@@ -1,0 +1,32 @@
+
+/* dnn6.2 Login CSS Code */
+
+#spLogin { margin-top:0px; min-height:5px; }
+
+#dnn_dnnUser_registerGroup ul { display:block; }
+#dnn_dnnUser_registerGroup strong { display:none ; }
+#dnn_dnnUser_registerGroup span {  color:#fff; padding:1px 4px; border-radius:6px; background:#ed3b3b; float:right; margin:-6px -6px 0 0; }
+#dnn_dnnUser_registerGroup li { display:block; float:right; padding:0 5px 0 9px; }
+#dnn_dnnUser_messageGroup a { background:url(../images/MessageIcon.png) no-repeat; display:block; width:40px; height:24px; }
+
+#dnn_dnnUser_notificationGroup a { background:url(../images/NotificationIcon.png) no-repeat; display:block; width:20px; height:24px; }
+.registerGroup li { border-left:none; border-right:none;}
+
+#dnn_dnnLogin_loginGroup a { display:block; padding-top:1px; padding-left:2px; padding-right:0; }
+
+.userDisplayName a { display:block; padding-top:1px; padding-left:0px; }
+
+#dnn_dnnUser_avatarGroup {  }
+#dnn_dnnUser_avatar { width:22px; height:22px; }
+
+.registerGroup { float:right;}
+.loginGroup { float:right;}
+
+
+
+
+
+
+
+
+
