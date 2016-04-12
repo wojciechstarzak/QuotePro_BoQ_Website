@@ -37,10 +37,14 @@ All Rights Reserved.
 <!-- container -->
 <div id="MainWrapper" CustomSection="edtPage" CustomTag="#MainWrapper" UserText="Main Wrapper" DisabledControls="#BackgroundImage, #Transparency, #FontColor, #BorderColor, .BgColorGrad" WidthTag="#MainWrapper">
      <header id="Header" CustomSection="edtPage" CustomTag="#Header" UserText="Page Header" DisabledControls="#BackgroundImage, #FontColor" WidthTag="#Header">
-             <nav class="navbar navbar-default">
+         <div class="row">
+         <div class="col-md-10 col-md-offset-1">    
+            <nav class="navbar navbar-default">
               <div class="container-fluid">
-                    <div class="navbar-header">
-                          <a class="navbar-brand" href="#"><img alt="Brand" src="..."></a>
+                          <div class="navbar-header">
+                          <a class="navbar-brand" href="#">
+                            <img alt="QuotePro Logo" class="img" src="<%= SkinPath %>images/logo.gif" />
+                          </a>
                         </div>
                         <ul class="nav navbar-nav" id="navbar-nav">
                           <li class="active"><a href="#About">About</a></li>
@@ -53,8 +57,10 @@ All Rights Reserved.
                           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                         </ul>
-                  </div>
+                      </div>
                 </nav>
+            </div>
+        </div>
         </header><!-- close Header  -->
     <div id="container" CustomSection="edtPage" CustomTag="#container" UserText="Main Container" DisabledControls="#FontColor, #BorderColor, #Transparency, .MainStyle" class="container-fluid">
 
@@ -313,8 +319,9 @@ All Rights Reserved.
             <div class="row">
                 <div id="CenteredonWhiteC" class="col-md-4 col-md-offset-4 spmodule" runat="server"></div>
             </div>
+    </div> <!-- container -->
 
-            <div id="MainFooter" CustomSection="edtPage" CustomTag="#MainFooter" UserText="Footer" DisabledControls="#FontColor" WidthTag="#MainFooter">
+                <div id="MainFooter" CustomSection="edtPage" CustomTag="#MainFooter" UserText="Footer" DisabledControls="#FontColor" WidthTag="#MainFooter">
                 <div class="row">
                     <div id="FooterA" class="col-md-3 LeftC spmodule" runat="server"></div>
                     <div id="FooterB" class="col-md-3 LeftC spmodule" runat="server"></div>
@@ -341,7 +348,7 @@ All Rights Reserved.
                 </div> <!-- close row --> 
             </div> <!-- close MainFooter --> 
                     
-    </div> <!-- container -->
+
 </div><!-- Close MainWrapper -->
 <!--END HTML HERE -->  
  
