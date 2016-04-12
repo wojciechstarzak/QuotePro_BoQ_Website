@@ -72,11 +72,11 @@ jQuery(document).ready(function() {
 
 
 
-jQuery(window).bind('resize orientationchange', function() {
-	ww = jQuery(window).width();
-	adjustMenu();
-	jQuery('.nav').superfish();
-});
+//jQuery(window).bind('resize orientationchange', function() {
+//	ww = jQuery(window).width();
+//	adjustMenu();
+//	jQuery('.nav').superfish();
+//});
 
 
 

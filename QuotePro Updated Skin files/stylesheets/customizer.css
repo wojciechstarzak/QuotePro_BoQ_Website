@@ -65,7 +65,7 @@ max-width : 100%;
 background-image : url(/Portals/_default/Skins/Demophon/images/Footer_Bg.png);
  background-repeat: no-repeat;
 background-position : 50% 0%;
-border-color : #779F14;
+border: none;
 color : #ECECEC;
 -moz-opacity:1;
 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -604,4 +604,6 @@ color : rgb(255, 255, 255);
 -khtml-opacity: 1;
 opacity: 1;
 }
+
+
                                                                                                                                                                                                                                                                                                
