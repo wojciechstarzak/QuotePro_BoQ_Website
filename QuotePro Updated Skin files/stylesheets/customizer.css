@@ -29,9 +29,9 @@ color : #FFFFFF;
 opacity: 1;
 max-width : 100%;
 }
-#Header{background-color : rgb(244, 244, 244);
+#Header{background-color : white;
 background-image : none;
-border-color : #E7E7E7;
+border-color : none;
 color : #333333;
 -moz-opacity:1;
 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -605,5 +605,46 @@ color : rgb(255, 255, 255);
 opacity: 1;
 }
 
+
+//Navbar Styles
+
+#Header > div > div > nav {
+	border-color: white !important;
+	background-color:transparent !important;
+	background-color:none !important;
+	height:80px !important;
+	margin-left:30px !important;
+	margin-right:30px !important;
+}
+
+.navbar-nav{
+/* 	width:280px !important;
+	height:16px !important; */
+	margin-left:85px !important;
+	margin-right:85px !important;
+}
+
+#Header > div > div > nav > div > ul.nav.navbar-nav.navbar-right{
+/* 	height:16px !important;
+	width:130px !important; */
+	margin-left:100px!important;
+	margin-right:30px !important;
+}
+
+.navbar-header{
+	height:100% !important;
+	width:200px !important;
+	margin-left:30px !important;
+	margin-right:100px !important;
+	padding-left:0 !important;
+}
+
+#navbar-nav > li > a{
+	padding-left:8px !important;
+	padding-right:8px !important;
+}
+
+
+//END
 
                                                                                                                                                                                                                                                                                                
