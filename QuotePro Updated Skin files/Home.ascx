@@ -39,11 +39,11 @@ All Rights Reserved.
      <header id="Header" CustomSection="edtPage" CustomTag="#Header" UserText="Page Header" DisabledControls="#BackgroundImage, #FontColor" WidthTag="#Header">
          <div class="row">
          <div class="col-md-10 col-md-offset-1">    
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default navbar-collapse">
               <div class="container-fluid">
-                          <div class="navbar-header">
+                        <div class="navbar-header">
                           <a class="navbar-brand" href="#">
-                            <img alt="QuotePro Logo" class="img" src="<%= SkinPath %>images/logo.gif" />
+                            <img alt="QuotePro Logo" class="img-responsive logoImage" src="<%= SkinPath %>images/logo.gif" />
                           </a>
                         </div>
                         <ul class="nav navbar-nav" id="navbar-nav">
