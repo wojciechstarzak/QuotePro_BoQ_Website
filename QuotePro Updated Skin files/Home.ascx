@@ -37,15 +37,21 @@ All Rights Reserved.
 <!-- container -->
 <div id="MainWrapper" CustomSection="edtPage" CustomTag="#MainWrapper" UserText="Main Wrapper" DisabledControls="#BackgroundImage, #Transparency, #FontColor, #BorderColor, .BgColorGrad" WidthTag="#MainWrapper">
      <header id="Header" CustomSection="edtPage" CustomTag="#Header" UserText="Page Header" DisabledControls="#BackgroundImage, #FontColor" WidthTag="#Header">
-         <div class="row">
+         <div class="row navRow">
          <div class="col-md-10 col-md-offset-1">    
-            <nav class="navbar navbar-default navbar-collapse">
-              <div class="container-fluid">
-                        <div class="navbar-header">
-                          <a class="navbar-brand" href="#">
-                            <img alt="QuotePro Logo" class="img-responsive logoImage" src="<%= SkinPath %>images/logo.gif" />
+            <nav role="navigation" class="navbar navbar-default">
+                   <div class="navbar-header">
+                       <a class="navbar-brand" href="#">
+                            <img alt="QuotePro Logo" class="img-responsive" src="<%= SkinPath %>images/logo.gif" />
                           </a>
-                        </div>
+                      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                      </button>
+                      </div>
+                 <div id="navbarCollapse" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav" id="navbar-nav">
                           <li class="active"><a href="#About">About</a></li>
                           <li><a href="#Features">Features</a></li> 
@@ -57,7 +63,7 @@ All Rights Reserved.
                           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                         </ul>
-                      </div>
+                  </div>
                 </nav>
             </div>
         </div>
@@ -103,7 +109,7 @@ All Rights Reserved.
                 <div id="BoxFPane" class="col-md-3 LeftC spmodule" runat="server"></div>
             </div> <!-- close 3Columns row  -->
 
-            <div id="GreyBodyTop" CustomSection="edtPage" CustomTag="#GreyBodyTop" UserText="Grey Body Top" DisabledControls="#FontColor, #BorderColor" WidthTag="#GreyBodyTop">           
+            <div id="GreyBodyTop" class="GreyBodyTop" CustomSection="edtPage" CustomTag="#GreyBodyTop" UserText="Grey Body Top" DisabledControls="#FontColor, #BorderColor" WidthTag="#GreyBodyTop">           
                 <div class="row">
                     <div id="GreyContentPane" class="col-md-12 spmodule" runat="server"></div>
                 </div>
@@ -127,7 +133,7 @@ All Rights Reserved.
                 </div> <!-- close 4Columns row  -->
             </div> <!-- close GreyBodyTop -->
 
-            <div id="SliderBg" CustomSection="edtPage" CustomTag="#SliderBg" UserText="Main Slider" DisabledControls="#FontColor" WidthTag="#SliderBg">
+            <div id="SliderBg" class="SliderBg" CustomSection="edtPage" CustomTag="#SliderBg" UserText="Main Slider" DisabledControls="#FontColor" WidthTag="#SliderBg">
             <div class="row">
                 <div id="SliderPane" class="col-md-12 slider spmodule" runat="server"> </div>
             </div>
@@ -141,8 +147,10 @@ All Rights Reserved.
             </div>
                 
             </div> <!-- close SliderBg  -->
-
+                
+        
             <div id="MpageBody" CustomSection="edtPage" CustomTag="#MpageBody" UserText="Main Page Body" DisabledControls="#FontColor, #BorderColor" WidthTag="#MpageBody">           
+                <!-- features rows -->
                 <div class="row">
                     <div id="ContentPane" class="col-md-12 spmodule" runat="server"></div>
                 </div>
@@ -152,6 +160,9 @@ All Rights Reserved.
                 <div class="row">
                     <div id="CenteredDivB" class="col-md-8 col-md-offset-2 spmodule" runat="server"></div>
                 </div>
+            <!--END features rows -->
+
+
                 <div class="row">
                     <div id="HalfA" class="col-md-6 LeftC spmodule" runat="server"></div>
                     <div id="HalfB" class="col-md-6 LeftC spmodule" runat="server"></div>
@@ -182,18 +193,21 @@ All Rights Reserved.
                     </div>  
                 </div><!-- close Left Full Layout -->
 
-                <div class="row">
+
+                <!-- steps rows -->
+                <div class="row stepsRow">
                     <div id="FeatureA" class="col-md-4 LeftC spmodule" runat="server"></div>
                     <div id="FeatureB" class="col-md-4 LeftC spmodule" runat="server"></div>
                     <div id="FeatureC" class="col-md-4 LeftC spmodule" runat="server"></div>
                 </div> <!-- close 3Columns row  -->
 
-                <div class="row">
+                <div class="row stepsRow">
                     <div id="ShowcaseA" class="col-md-3 LeftC spmodule" runat="server"></div>
                     <div id="ShowcaseB" class="col-md-3 LeftC spmodule" runat="server"></div>
                     <div id="ShowcaseC" class="col-md-3 LeftC spmodule" runat="server"></div>
                     <div id="ShowcaseD" class="col-md-3 LeftC spmodule" runat="server"></div>
                 </div> <!-- close 4Columns row  -->
+                <!-- steps rows -->
 
                 <div class="row">
                     <div id="LeftSide1Pane" class="col-md-3 LeftC spmodule" runat="server"></div>  
@@ -277,7 +291,7 @@ All Rights Reserved.
 
             </div> <!-- close MPageBody -->
 
-            <div id="GreyBodyBottom" CustomSection="edtPage" CustomTag="#GreyBodyBottom" UserText="Grey Body Bottom" DisabledControls="#FontColor, #BorderColor" WidthTag="#GreyBodyBottom">           
+            <div id="GreyBodyBottom" class="GreyBodyBottom" CustomSection="edtPage" CustomTag="#GreyBodyBottom" UserText="Grey Body Bottom" DisabledControls="#FontColor, #BorderColor" WidthTag="#GreyBodyBottom">           
                 <div class="row">
                     <div id="GreyBottomContentPane" class="col-md-12 spmodule" runat="server"></div>
                 </div>
@@ -319,9 +333,42 @@ All Rights Reserved.
             <div class="row">
                 <div id="CenteredonWhiteC" class="col-md-4 col-md-offset-4 spmodule" runat="server"></div>
             </div>
+
+            <div id="GreyVersionShowcase" class="GreyVersionShowcase" CustomSection="edtPage" CustomTag="#GreyVersionShowcase" UserText="Grey Version Showcase" DisabledControls="#FontColor, #BorderColor" WidthTag="#GreyVersionShowcase">           
+                <div class="row">
+                    <div id="GreyVersionShowcase1" class="col-md-12 spmodule" runat="server"></div>
+                </div>
+
+                <div class="row">
+                    <div id="GreyVersionShowcase2" class="col-md-6 LeftC spmodule" runat="server"></div>
+                    <div id="Div3" class="col-md-6 LeftC spmodule" runat="server"></div>
+                </div> <!-- close 2Columns row  -->
+
+                <div class="row">
+                    <div id="Div4" class="col-md-4 LeftC spmodule" runat="server"></div>
+                    <div id="Div5" class="col-md-4 LeftC spmodule" runat="server"></div>
+                    <div id="Div6" class="col-md-4 LeftC spmodule" runat="server"></div>
+                </div> <!-- close 3Columns row  -->
+
+                <div class="row">
+                    <div id="Div7" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="Div8" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="Div9" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="Div10" class="col-md-3 LeftC spmodule" runat="server"></div>
+                </div> <!-- close 4Columns row  -->
+
+                <div class="row">
+                    <div id="Div12" class="col-md-3 col-md-offset-3 LeftC spmodule" runat="server"></div>
+                    <div id="Div13" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="Div14" class="col-md-3 LeftC spmodule" runat="server"></div>
+                </div> <!-- close 5Columns row  -->
+
+            </div> <!-- close GreyBodyBottom -->    
+
+
     </div> <!-- container -->
 
-                <div id="MainFooter" CustomSection="edtPage" CustomTag="#MainFooter" UserText="Footer" DisabledControls="#FontColor" WidthTag="#MainFooter">
+                <div class="container" id="MainFooter" CustomSection="edtPage" CustomTag="#MainFooter" UserText="Footer" DisabledControls="#FontColor" WidthTag="#MainFooter">
                 <div class="row">
                     <div id="FooterA" class="col-md-3 LeftC spmodule" runat="server"></div>
                     <div id="FooterB" class="col-md-3 LeftC spmodule" runat="server"></div>
@@ -354,7 +401,7 @@ All Rights Reserved.
  
 
 <!----------Back to Top Code - MUST COPY------------>
-<div id="backtotop" style="display:none;"> <!-- Back to Top Button -->
+<div id="backtotop"> <!-- Back to Top Button -->
    <a href="#">
       <img src="<%= SkinPath %>images/back_to_top_btn.png" border="0" alt="Back to TOP" />
    </a>
