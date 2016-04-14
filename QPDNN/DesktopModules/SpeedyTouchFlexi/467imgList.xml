@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfImagesList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ImagesList>
+    <imagePath>/DesktopModules/SpeedyTouchFlexi/Images467/slider1.jpg</imagePath>
+    <imageText />
+    <imageLink />
+  </ImagesList>
+  <ImagesList>
+    <imagePath>/DesktopModules/SpeedyTouchFlexi/Images467/GOATSLIDER1.jpg</imagePath>
+    <imageText />
+    <imageLink />
+  </ImagesList>
+  <ImagesList>
+    <imagePath>/DesktopModules/SpeedyTouchFlexi/Images467/slide.jpg</imagePath>
+    <imageText>&lt;p&gt;Goating Around&lt;/p&gt;
+</imageText>
+    <imageLink />
+  </ImagesList>
+</ArrayOfImagesList>

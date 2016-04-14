@@ -1,0 +1,29 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages><package name="(UnZip)DNNGo_ResponsiveSlide_04.03.06_Effect25" type="Module" version="1.0.0">
+  <friendlyName>(UnZip)DNNGo_ResponsiveSlide_04.03.06_Effect25</friendlyName>
+  <description />
+  <iconFile />
+  <owner>
+    <name>(UnZip)DNNGo_ResponsiveSlide_04</name>
+    <organization />
+    <url />
+    <email />
+  </owner>
+  <license>The license for this package is not currently included within the installation file, please check with the vendor for full license details.</license>
+  <releaseNotes>This package has no Release Notes</releaseNotes>
+  <components>
+    <component type="Container">
+      <containerFiles>
+        <containerName>(UnZip)DNNGo_ResponsiveSlide_04.03.06_Effect25</containerName>
+        <basePath>Portals\_default\Containers\(UnZip)DNNGo_ResponsiveSlide_04.03.06_Effect25</basePath>
+        <containerFile>
+          <name>DNNGo_ResponsiveSlide_04.03.06_Effect25_PA.zip</name>
+        </containerFile>
+        <containerFile>
+          <name>ReadMe.txt</name>
+        </containerFile>
+      </containerFiles>
+    </component>
+  </components>
+</package></packages>
+</dotnetnuke>

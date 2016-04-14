@@ -1,0 +1,29 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}SpeedyAppNivoSlider]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+
+CREATE TABLE {databaseOwner}[{objectQualifier}SpeedyAppNivoSlider](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[imagePath] [nvarchar](200) NULL,
+	[link] [nvarchar](200) NULL,
+	[text] [ntext] NULL,
+	[ModuleID] [int] NULL
+ CONSTRAINT [PK_SpeedyAppNivoSlider] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+END
+GO

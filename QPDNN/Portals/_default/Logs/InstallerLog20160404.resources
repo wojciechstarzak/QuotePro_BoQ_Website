@@ -1,0 +1,1109 @@
+04/04/2016 13:37:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Creation Check
+04/04/2016 13:37:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Creation Check
+04/04/2016 13:37:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Deletion Check
+04/04/2016 13:37:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Deletion Check
+04/04/2016 13:37:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Checking IIS configuration
+04/04/2016 13:37:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Database Script DotNetNuke.Schema
+04/04/2016 13:37:29 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\DotNetNuke.Schema.SqlDataProvider
+04/04/2016 13:37:31 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\DotNetNuke.Schema.SqlDataProvider
+04/04/2016 13:37:31 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Database Script DotNetNuke.Data
+04/04/2016 13:37:31 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\DotNetNuke.Data.SqlDataProvider
+04/04/2016 13:37:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\DotNetNuke.Data.SqlDataProvider
+04/04/2016 13:37:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Membership Database Scripts
+04/04/2016 13:37:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallMemberRoleProvider
+04/04/2016 13:37:33 [ERROR] DotNetNuke.Services.Upgrade.Upgrade System.Data.SqlClient.SqlException (0x80131904): Cannot find the user 'quotepro', because it does not exist or you do not have permission.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScriptInternal(String connectionString, String script)
+ClientConnectionId:8d837526-e5b6-4c19-97e8-01667dbb00a8
+Error Number:15151,State:1,Class:16
+
+DECLARE @command nvarchar(4000)
+
+SET @command = 'GRANT EXECUTE ON [dbo].aspnet_RegisterSchemaVersion TO ' + QUOTENAME(user)
+EXEC (@command)
+
+System.Data.SqlClient.SqlException (0x80131904): Cannot find the user 'quotepro', because it does not exist or you do not have permission.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScriptInternal(String connectionString, String script)
+ClientConnectionId:8d837526-e5b6-4c19-97e8-01667dbb00a8
+Error Number:15151,State:1,Class:16
+
+DECLARE @command nvarchar(400)
+SET @command = 'GRANT EXECUTE ON [dbo].aspnet_AnyDataInTables TO ' + QUOTENAME(user)
+EXEC (@command)
+
+System.Data.SqlClient.SqlException (0x80131904): Cannot find the user 'quotepro', because it does not exist or you do not have permission.
+Creating the vw_aspnet_Applications view...
+Creating the vw_aspnet_Users view...
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScriptInternal(String connectionString, String script)
+ClientConnectionId:8d837526-e5b6-4c19-97e8-01667dbb00a8
+Error Number:15151,State:1,Class:16
+
+/*************************************************************/
+/*************************************************************/
+
+IF (NOT EXISTS (SELECT name
+                FROM sys.objects
+                WHERE (name = N'vw_aspnet_Applications')
+                  AND (type = 'V')))
+BEGIN
+  PRINT 'Creating the vw_aspnet_Applications view...'
+  EXEC('
+  CREATE VIEW [dbo].[vw_aspnet_Applications]
+  AS SELECT [ApplicationName], [LoweredApplicationName], [ApplicationId], [Description]
+  FROM [dbo].[aspnet_Applications]
+  ')
+END
+
+/*************************************************************/
+/*************************************************************/
+
+IF (NOT EXISTS (SELECT name
+                FROM sys.objects
+                WHERE (name = N'vw_aspnet_Users')
+                  AND (type = 'V')))
+BEGIN
+  PRINT 'Creating the vw_aspnet_Users view...'
+  EXEC('
+  CREATE VIEW [dbo].[vw_aspnet_Users]
+  AS SELECT [ApplicationId], [UserId], [UserName], [LoweredUserName], [MobileAlias], [IsAnonymous], [LastActivityDate]
+  FROM [dbo].[aspnet_Users]
+  ')
+END
+
+/*************************************************************/
+/*************************************************************/
+DECLARE @command nvarchar(4000)
+
+SET @command = 'REVOKE EXECUTE ON [dbo].aspnet_RegisterSchemaVersion from ' + QUOTENAME(user)
+EXEC (@command)
+
+System.Data.SqlClient.SqlException (0x80131904): Cannot find the user 'quotepro', because it does not exist or you do not have permission.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScriptInternal(String connectionString, String script)
+ClientConnectionId:8d837526-e5b6-4c19-97e8-01667dbb00a8
+Error Number:15151,State:1,Class:16
+
+/*************************************************************/
+/*************************************************************/
+
+--
+--Create Membership schema version
+--
+DECLARE @command nvarchar(4000)
+SET @command = 'GRANT EXECUTE ON [dbo].aspnet_RegisterSchemaVersion TO ' + QUOTENAME(user)
+EXECUTE (@command)
+
+
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Creation Check
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Creation Check
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Deletion Check
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Deletion Check
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Checking IIS configuration
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.01
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.01.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.01.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.01.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.01.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.02
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.02.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.02.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.02.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.02.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.03
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.03.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.03.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.03.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.03.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.04
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.04.SqlDataProvider
+04/04/2016 13:37:54 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.04.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.04.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.04.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.05
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.05.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.05.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.05.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.05.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.00.06
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.06.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.06.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.06.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.00.06.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.01.00
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.00.SqlDataProvider
+04/04/2016 13:37:55 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.00.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.00.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.00.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.01.01
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.01.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.01.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.01.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.01.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.01.02
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.02.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.02.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.02.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.01.02.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.02.00
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.00.SqlDataProvider
+04/04/2016 13:37:56 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.00.SqlDataProvider
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.00.SqlDataProvider
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.00.SqlDataProvider
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.02.01
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.01.SqlDataProvider
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.01.SqlDataProvider
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.01.SqlDataProvider
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.01.SqlDataProvider
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.02.02
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.02.SqlDataProvider
+04/04/2016 13:37:57 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.02.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.02.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.02.02.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.03.00
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.00.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.00.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.00.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.00.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.03.01
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.01.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.01.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.01.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.01.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.03.02
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.02.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.02.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.02.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.02.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.03.03
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.03.SqlDataProvider
+04/04/2016 13:37:58 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.03.SqlDataProvider
+04/04/2016 13:38:01 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.03.SqlDataProvider
+04/04/2016 13:38:01 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.03.SqlDataProvider
+04/04/2016 13:38:01 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.03.04
+04/04/2016 13:38:01 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.04.SqlDataProvider
+04/04/2016 13:38:01 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.04.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.04.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.03.04.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.04.00
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.00.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.00.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.00.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.00.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.04.01
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.01.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.01.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.01.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.01.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 07.04.02
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.02.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.02.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.02.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\07.04.02.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.SqlDataProvider
+04/04/2016 13:38:02 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.01
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.01.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.01.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.01.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.01.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.02
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.02.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.02.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.02.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.02.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.03
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.03.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.03.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.03.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.03.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.04
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.04.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.04.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.04.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.04.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.05
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.05.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.05.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.05.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.05.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.06
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.06.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.06.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.06.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.06.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.07
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.07.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.07.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.07.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.07.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.08
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.08.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.08.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.08.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.08.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.09
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.09.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.09.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.09.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.09.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.10
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.10.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.10.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.10.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.10.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.11
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.11.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.11.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.11.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.11.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.12
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.12.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.12.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.12.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.12.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.13
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.13.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.13.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.13.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.13.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.14
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.14.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.14.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.14.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.14.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.15
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.15.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.15.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.15.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.15.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.16
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.16.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.16.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.16.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.16.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.17
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.17.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.17.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.17.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.17.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.18
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.18.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.18.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.18.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.18.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.19
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.19.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.19.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.19.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.19.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.20
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.20.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.20.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.20.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.20.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.21
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.21.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.21.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.21.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.21.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.22
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.22.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.22.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.22.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.22.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.23
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.23.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.23.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.23.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.23.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.24
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.24.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.24.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.24.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.24.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.25
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.25.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.25.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.25.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.25.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.26
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.26.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.26.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.26.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.26.SqlDataProvider
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.27
+04/04/2016 13:38:03 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.27.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.27.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.27.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.27.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.28
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.28.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.28.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.28.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.28.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.29
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.29.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.29.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.29.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.29.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.30
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.30.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.30.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.30.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.30.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.00.31
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.31.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.31.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.31.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.00.31.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.01
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.01.01
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.01.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.01.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade End ExecuteScript:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.01.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.01.SqlDataProvider
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.1
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.1
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.2
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.2
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.3
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.3
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.4
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.4
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.5
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.5
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.0.6
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.0.6
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.1.0
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.1.0
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddAdminPages:Search Admin
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.1.1
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.1.1
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.1.2
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.1.2
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.2.0
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.2.0
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleDefinition:Module Creator
+04/04/2016 13:38:04 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleControl:112
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.2.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.2.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.2.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.2.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.3.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.3.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.3.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.3.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.3.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.3.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.3.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.3.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.3.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.3.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.4.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.4.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.4.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.4.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 7.4.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 7.4.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.5
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.6
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//Languages
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//Lists
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//LogViewer
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//Newsletters
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//Pages
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//RecycleBin
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//SiteLog
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//SiteWizard
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//Vendors
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:Lists
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:Vendors
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.7
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:Dashboard
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:SQL
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:Configuration Manager
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.8
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.9
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.10
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.11
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.12
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.13
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.14
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.15
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.16
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//GoogleAnalytics
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//AdvancedSettings
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//Skins
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.17
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.18
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.19
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.20
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.21
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.22
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.23
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.24
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.25
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.26
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.27
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//DynamicContentTypeManager
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.28
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.29
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.30
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.0.31
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application to 8.0.1.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start Application Upgrades: 8.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.03
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.03
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.04
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.04
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.5
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.05
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.5
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=key
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.5
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.05
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.0.6
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.00.06
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.0.6
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=requestPathInvalidCharacters
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.0.6
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.00.06
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.1.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.01.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.1.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.1.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.01.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.1.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.01.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.1.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=key
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.1.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.01.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.1.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.01.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.1.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=defaultFileProcessingProvider
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.1.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.01.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.2.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.02.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.2.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.2.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.02.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.2.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.02.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.2.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.2.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.02.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.2.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.02.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.2.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.2.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.02.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.3.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.03.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.3.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=key
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.3.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.03.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.3.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.03.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.3.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.3.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.03.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.3.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.03.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.3.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.3.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.03.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.3.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.03.03
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.3.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.3.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.03.03
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.3.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.03.04
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.3.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.3.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.03.04
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.4.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.04.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.4.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.4.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.04.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.4.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.04.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.4.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.4.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.04.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 7.4.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:07.04.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:7.4.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:7.4.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:07.04.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=preCondition
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.03
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=defaultProvider
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.03
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.04
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.04
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.5
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.05
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.05
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.6
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.06
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.06
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.7
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.07
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.07
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.8
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.08
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.08
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.9
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.09
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.09
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.10
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.10
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.10
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.11
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.11
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.11
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.12
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.12
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=targetFramework
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=targetFramework
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=key
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.12
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.13
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.13
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.13
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.14
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.14
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.14
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.15
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.15
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.15
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.16
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.16
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.16
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.17
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.17
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.17
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.18
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.18
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.18
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.19
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.19
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.19
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.20
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.20
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.20
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.21
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.21
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.21
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.22
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.22
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.22
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.23
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.23
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.23
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.24
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.24
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.24
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.25
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.25
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.25
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.26
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.26
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.26
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.27
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.27
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.27
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.28
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.28
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.28
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.29
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.29
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.29
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.30
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.30
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.30
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.0.31
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.00.31
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.00.31
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Updating Config for 8.0.1.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:08.00.01.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpdateConfig:8.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:8.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade End UpdateConfig:08.00.01.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.03
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.04
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.5
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.05
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.0.6
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.00.06
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.1.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.01.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.1.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.01.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.1.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.01.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.2.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.02.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.2.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.02.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.2.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.02.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.3.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.03.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.3.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.03.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.3.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.03.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.3.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.03.03
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.3.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.03.04
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.4.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.04.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.4.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.04.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 7.4.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:07.04.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.1
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.01
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.2
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.02
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.3
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.03
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.4
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.04
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.5
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.05
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.6
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.06
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.7
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.07
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.8
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.08
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.9
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.09
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.10
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.10
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.11
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.11
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.12
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.12
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.13
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.13
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.14
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.14
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.15
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.15
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.16
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.16
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.17
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.17
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.18
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.18
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.19
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.19
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.20
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.20
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.21
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.21
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.22
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.22
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.23
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.23
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.24
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.24
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.25
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.25
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.26
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.26
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.27
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.27
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.28
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.28
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.29
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.29
+04/04/2016 13:38:05 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.30
+04/04/2016 13:38:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.30
+04/04/2016 13:38:06 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.0.31
+04/04/2016 13:38:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.00.31
+04/04/2016 13:38:06 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.1
+04/04/2016 13:38:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.01
+04/04/2016 13:38:06 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Deleting Older Files for 8.0.1.1
+04/04/2016 13:38:06 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start DeleteFiles:08.00.01.01
+04/04/2016 13:38:06 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Creation Check
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Creation Check
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Deletion Check
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Deletion Check
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Checking IIS configuration
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.01.01
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.01.SqlDataProvider
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.01.SqlDataProvider
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_ConfigurationManager_08.00.01_Install.zip
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_ConfigurationManager_08.00.01_Install.zip
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:Configuration Manager
+04/04/2016 13:40:29 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Configuration Manager
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:113
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:113
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DDRMenu_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DDRMenu_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Console_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Console_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Dashboard_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Dashboard_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:Dashboard
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Dashboard
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:115
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:115
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_CoreMessaging_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_CoreMessaging_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_GoogleAnalytics_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_GoogleAnalytics_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_DigitalAssetsManagement_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_DigitalAssetsManagement_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Languages_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Languages_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_HtmlEditorManager_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_HtmlEditorManager_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_HTML_08.00.01_Install.zip
+04/04/2016 13:40:32 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_HTML_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Journal_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Journal_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Lists_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Lists_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:Lists
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Lists
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:90
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:90
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_LogViewer_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_LogViewer_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_ModuleCreator_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_ModuleCreator_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_MemberDirectory_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_MemberDirectory_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_MobileManagement_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_MobileManagement_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_RecycleBin_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_RecycleBin_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_PreviewProfileManagement_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_PreviewProfileManagement_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=key
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_RazorHost_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_RazorHost_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Sitemap_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Sitemap_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_SiteWizard_08.00.01_Install.zip
+04/04/2016 13:40:33 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_SiteWizard_08.00.01_Install.zip
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Sql_08.00.01_Install.zip
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Sql_08.00.01_Install.zip
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:SQL
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:SQL
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:65
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:65
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_SocialGroups_08.00.01_Install.zip
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_SocialGroups_08.00.01_Install.zip
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Tabs_08.00.01_Install.zip
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Tabs_08.00.01_Install.zip
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Themes_08.00.01_Install.zip
+04/04/2016 13:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Themes_08.00.01_Install.zip
+04/04/2016 13:40:35 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - DNNCE_Taxonomy_08.00.01_Install.zip
+04/04/2016 13:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_Taxonomy_08.00.01_Install.zip
+04/04/2016 13:40:35 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Skin - Skin_Xcillion_1.0.0.zip
+04/04/2016 13:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Skin\Skin_Xcillion_1.0.0.zip
+04/04/2016 13:40:36 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Library - DNNCE_UrlManagement_08.00.01_Install.zip
+04/04/2016 13:40:36 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\DNNCE_UrlManagement_08.00.01_Install.zip
+04/04/2016 13:40:37 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - jQuery.zip
+04/04/2016 13:40:37 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\JavaScriptLibrary\jQuery.zip
+04/04/2016 13:40:37 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Module - SecurityAnalyzer_08.00.01_Install.zip
+04/04/2016 13:40:37 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\SecurityAnalyzer_08.00.01_Install.zip
+04/04/2016 13:40:37 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Library - Telerik_08.00.01_Install.zip
+04/04/2016 13:40:37 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Module\Telerik_08.00.01_Install.zip
+04/04/2016 13:40:39 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:39 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:39 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:39 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - Knockout.zip
+04/04/2016 13:40:39 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\JavaScriptLibrary\Knockout.zip
+04/04/2016 13:40:40 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Provider - DNNConnect.CKEditorProvider_01.00.01_Install.zip
+04/04/2016 13:40:40 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Provider\DNNConnect.CKEditorProvider_01.00.01_Install.zip
+04/04/2016 13:40:42 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:42 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Provider - DNNMenuNavigationProvider_07.04.01_Install.zip
+04/04/2016 13:40:42 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Provider\DNNMenuNavigationProvider_07.04.01_Install.zip
+04/04/2016 13:40:42 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:42 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing Provider - FiftyOneClientCapabilityProvider_08.00.01_Install.zip
+04/04/2016 13:40:42 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\Provider\FiftyOneClientCapabilityProvider_08.00.01_Install.zip
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateAttribute:attributeName=defaultProvider
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Installer.XmlMerge Start UpdateNode: keyAttribute=name
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - jQueryMigrate.zip
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\JavaScriptLibrary\jQueryMigrate.zip
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - jQueryUI.zip
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\JavaScriptLibrary\jQueryUI.zip
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Installing JavaScript_Library - KnockoutMapping.zip
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start InstallPackage:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Install\JavaScriptLibrary\KnockoutMapping.zip
+04/04/2016 13:40:43 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Initializing Host Settings
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Creating Site [My Website]
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start CreateUserInfo:host
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Creation Check
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Creation Check
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep File Deletion Check
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Folder Deletion Check
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Checking IIS configuration
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Applying Upgrade Script 08.00.01.01
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.01.SqlDataProvider
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start UpgradeVersion:C:\Users\Work PC\Documents\My Web Sites\QPDNN\Providers\DataProviders\SqlDataProvider\08.00.01.01.SqlDataProvider
+04/04/2016 13:40:44 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Upgrading Application
+04/04/2016 13:40:45 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Initializing Host Settings
+04/04/2016 13:40:45 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Creating Site [My Website]
+04/04/2016 13:40:45 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start CreateUserInfo:host
+04/04/2016 13:40:48 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:13
+04/04/2016 13:40:48 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:13
+04/04/2016 13:40:48 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Create Super User
+04/04/2016 13:40:48 [INFO] DotNetNuke.Services.Upgrade.Internals.Steps.BaseInstallationStep Creating Super Userhost
+04/04/2016 13:40:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:13
+04/04/2016 13:40:51 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:13
+04/04/2016 13:41:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:File Management
+04/04/2016 13:41:08 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:File Management
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:118
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:118
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddAdminPage:File Management
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:View
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:Edit
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:File Management
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:118
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:118
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddAdminPage:File Management
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:View
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:Edit
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:File Management
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:118
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:118
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:File Manager
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//FileManager
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:HTML Editor Manager
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:HTML Editor Manager
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveModule:RadEditor Manager
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:119
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:119
+04/04/2016 13:41:10 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:123
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:123
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:123
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:123
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:124
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:124
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:124
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:124
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//Skins
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddAdminPage:Taxonomy
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:View
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:Edit
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Taxonomy
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:130
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:130
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddAdminPage:Taxonomy
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:View
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:Edit
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Taxonomy
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:130
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:130
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:Device Detection Management
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:Device Detection Management
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:Device Detection Management
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:132
+04/04/2016 13:41:11 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:132

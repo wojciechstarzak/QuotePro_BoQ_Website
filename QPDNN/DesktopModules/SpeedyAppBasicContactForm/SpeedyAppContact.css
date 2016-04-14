@@ -1,0 +1,44 @@
+﻿    .input, .text-area { 
+	    padding: 8px;
+	    margin-left:-10px;
+	    border: solid 1px #E5E5E5;
+	    font: normal 13px Verdana, Tahoma, sans-serif;
+	    width: 300px;
+	    background: #FFFFFF url('form_background.png') left top repeat-x;/*Mimic Background Property in Internet Explorer since IE 6,7,8 does not support CSS3*/
+	    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;/*0.1 actually means 10 %*/
+	    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	    }
+	    .text-area{ max-width:500px; height:200px;margin-left:0px;}
+        @media handheld, only screen and (max-width: 767px) 
+        {
+            .input{display: block; width: 95%; padding: 6px 2% 4px; font-size: 18px;margin-left:0px;}
+            .text-area {width:100%;height: 150px;line-height: 150%;margin-left:0px;}
+        }
+
+        .input:hover, .text-area:hover,
+        .input:focus, .text-area:focus { 
+            -moz-box-shadow:0 0 8px lightblue;
+	        -webkit-box-shadow:0 0 8px lightblue;
+	        box-shadow:0 0 8px lightblue;
+        }
+
+        .form label { 
+	    margin-left: 12px; 
+	    color: #999999; 
+	    }
+
+        .submit{
+	    width: auto;
+	    padding: 10px 14px;
+	    margin-left:10px;
+	    background: #617798;
+	    font-size: 14px;
+	    color: #FFFFFF;
+	    -moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    cursor:pointer;
+        }
+       

@@ -1,0 +1,85 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages><package name="SpeedyAppMobileFramework" type="Module" version="1.0.0">
+  <friendlyName>SpeedyApp Skin Control Panel</friendlyName>
+  <description>SpeedyApp Skin Control Panel</description>
+  <iconFile />
+  <owner>
+    <name>SpeedyApplication.com Inc.</name>
+    <organization>SpeedyApplication.com Inc.</organization>
+    <url>http://www.speedyapplication.com</url>
+    <email>info@speedyapplication.com</email>
+  </owner>
+  <license>This program is protected by US and International Copyright laws. Copyright 2013 SpeedyApplication.com Inc. All rights reserved.</license>
+  <releaseNotes />
+  <components>
+    <component type="Module">
+      <desktopModule>
+        <moduleName>SpeedyAppMobileFramework</moduleName>
+        <foldername>SpeedyAppMobileFramework</foldername>
+        <businessControllerClass />
+        <supportedFeatures />
+        <moduleDefinitions>
+          <moduleDefinition>
+            <friendlyName>SpeedyApp Skin Control Panel</friendlyName>
+            <defaultCacheTime>0</defaultCacheTime>
+            <moduleControls>
+              <moduleControl>
+                <controlKey />
+                <controlSrc>DesktopModules/SpeedyAppMobileFramework/ViewSpeedyAppMobileFramework.ascx</controlSrc>
+                <supportsPartialRendering>False</supportsPartialRendering>
+                <controlTitle />
+                <controlType>View</controlType>
+                <iconFile />
+                <helpUrl />
+                <supportsPopUps>False</supportsPopUps>
+                <viewOrder>0</viewOrder>
+              </moduleControl>
+            </moduleControls>
+          </moduleDefinition>
+        </moduleDefinitions>
+      </desktopModule>
+    </component>
+    <component type="Assembly">
+      <assemblies>
+        <basePath>bin</basePath>
+        <assembly>
+          <name>SpeedyApp.Modules.SpeedyAppMobileFramework.dll</name>
+        </assembly>
+      </assemblies>
+    </component>
+    <component type="File">
+      <files>
+        <basePath>DesktopModules\SpeedyAppMobileFramework</basePath>
+        <file>
+          <path>App_LocalResources</path>
+          <name>EditSpeedyAppMobileFramework.ascx.resx</name>
+        </file>
+        <file>
+          <path>App_LocalResources</path>
+          <name>Settings.ascx.resx</name>
+        </file>
+        <file>
+          <path>App_LocalResources</path>
+          <name>ViewSpeedyAppMobileFramework.ascx.resx</name>
+        </file>
+        <file>
+          <name>SpeedyAppMobileFramework.dnn</name>
+        </file>
+        <file>
+          <path>scripts</path>
+          <name>json2.js</name>
+        </file>
+        <file>
+          <name>Settings.ascx</name>
+        </file>
+        <file>
+          <name>SpeedyAppMobileFramework.css</name>
+        </file>
+        <file>
+          <name>ViewSpeedyAppMobileFramework.ascx</name>
+        </file>
+      </files>
+    </component>
+  </components>
+</package></packages>
+</dotnetnuke>

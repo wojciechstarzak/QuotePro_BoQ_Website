@@ -1,0 +1,333 @@
+
+.c_DNN6_Header .Head { color:inherit; font-size:18px; line-height:24px; padding:0 10px 0 0; text-transform:uppercase;}
+.c_DNN6_Header .Title { margin:1em 0 .5em 0; overflow:hidden; }
+.c_DNN6_Header .Title .TitleBar { margin:0 -100% 0 0; vertical-align:middle; width: 100%; height: 20px; }
+
+.c_DNN6_SubTitle .Head { color:inherit; font-size:18px; line-height:30px; padding:0 10px 0 0; text-transform:uppercase; }
+.c_DNN6_SubTitle .Title { margin:1.35em 0 .5em 0; overflow:hidden; }
+.c_DNN6_SubTitle .Title .TitleBar { margin:0 -100% 0 0; vertical-align:middle; width: 100%; height: 24px; }
+.Head{ color:inherit; border:none; font-weight:bold; font-size:18px; }
+.Title { color:inherit; line-height:30px; font-family:'titillium',Tahoma; }
+
+#clearfix
+{
+    width:100%;
+    float:left;
+    overflow:auto;
+}
+
+/* Change Color Code for Container */
+
+/* BevelTitle CSS */
+#BevelTitle { background:#fff; /* Background Color Code */ border:1px solid #cecfcf; /* Border Color Code */  }
+    .Bevel_Shadow { -moz-box-shadow: inset 0 0 15px #505050; -ms-box-shadow: inset 0 0 15px #505050; -webkit-box-shadow: inset 0 0 15px #505050; box-shadow: inset 0 0 15px #505050; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }   
+.BevelTitle_Title { background:#356995; /* Title_Background Color Code */ }
+        
+/* BevelNoTitle CSS */
+#BevelNoTitle { background:#fbfbfb; /* Background Color Code */ }
+    
+/* DentTitle CSS */
+#DentTitle{ background:#fff; /* Background Color Code */ border:1px solid #cecfcf;  }
+.DentTitle_Title  { text-align:left; background: #4095e3; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+
+#DentTitle { -webkit-box-shadow: 0 10px 6px -6px #777; -moz-box-shadow: 0 10px 6px -6px #777; box-shadow: 0 10px 6px -6px #777; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+         
+/* DentNoTitle CSS */
+#DentNoTitle{ background:#fff; /* Background Color Code */ }
+
+
+#DentNoTitle:before, #DentNoTitle:after { content:""; position:absolute; z-index:-1; top:10px; bottom:10px; left:0; right:0;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8); -moz-box-shadow:0 0 20px rgba(0,0,0,0.8); box-shadow:0 0 20px rgba(0,0,0,0.8);  
+    -moz-border-radius:100px / 10px; -webkit-border-radius:100px / 10px; border-radius:100px / 10px; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+#DentNoTitle:after { right:10px; left:auto; -webkit-transform:skew(8deg) rotate(3deg); -moz-transform:skew(8deg) rotate(3deg); -ms-transform:skew(8deg) rotate(3deg); -o-transform:skew(8deg) rotate(3deg); transform:skew(8deg) rotate(3deg); behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+
+           
+/* DentTitleSolid CSS */
+#DentTitleSolid { background:#fff; /* Background Color Code */ border:1px solid #cecfcf; /* Border Color Code */  }
+.DentTitleSolid_Title { border-bottom:2px solid #356995; /* BorderBottom Color Code */ }
+
+/* DefaultTitle CSS */
+.DefaultTitle { padding:5px 0; font-family:'titillium',Tahoma; color:inherit; text-align:left; }
+.DefaultTitle .Head { font-size:32px; font-weight:bold; }
+        
+/* LeafTitle CSS */
+#LeafTitle{ background:#fff; /* Background Color Code */ border:1px solid #cecfcf; /* Border Color Code */ }
+.LeafTitle_Title { text-align:left; background: #3d7bb3; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+	               
+/* LeafTitleSolid CSS */
+#LeafTitleSolid{ background:#fff; /* Background Color Code */ border:1px solid #c3c6ca; /* Border Color Code */ }
+.LeafTitleSolid_Title { border-bottom:3px dotted #356995; /* BorderBottom Color Code */ }
+    
+/*  RoundedBorderNoTitle CSS */
+.RoundedBorderNoTitle { background:#fff; /* Background Color Code */ border:1px solid #22599f;/* Border Color Code */  }
+   
+/*  RoundedNoTilte CSS */
+#RoundedNoTilte { background:#fff; border:1px solid #bbb5b9; }
+
+/* RoundedNotTilte CSS */
+#RoundedNotTilte { margin:2.7em 0 0 0; -webkit-box-shadow: 0px 0px 4px #e7e7e7; -moz-box-shadow: 0px 0px 4px #e7e7e7; box-shadow: 0px 0px 4px #e7e7e7;
+                   -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+.RNTop { height:2px; background:url(images/RNTop_Bg.png) no-repeat top right; }
+.RNBottom { height:2px; background: url(images/RNBottom_Bg.png) no-repeat bottom left; }
+.RoundedNotTilteContent { padding:10px 20px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+ 
+/* RoundedTilte CSS */
+#RoundedTilte { margin:2.7em 0 0 0; -webkit-box-shadow: 0px 0px 4px #e7e7e7; -moz-box-shadow: 0px 0px 4px #e7e7e7; box-shadow: 0px 0px 4px #e7e7e7; float:left;
+                   -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+.RoundedTextTitle { padding:12px 20px 7px 20px; font-family:'titillium',Tahoma; color:inherit; }
+.RoundedTextTitle .Head { font-size:24px; }
+.RoundedTilteContent { padding:0 20px 10px 20px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+ 
+ 
+/* Rounded3dRibbon CSS */
+.Rounded3dRibbon { margin:2.7em 0 0 0; background:#fff; border:1px solid #cecfcf;
+                   -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	               -moz-box-shadow: 0px 0px 8px #e4e3e3; -khtml-box-shadow: 0px 0px 8px #e4e3e3; -webkit-box-shadow: 0px 0px 8px #e4e3e3; box-shadow: 0px 0px 8px #e4e3e3;
+                   behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+.Rectangle_Title { background:#7f9db9; height: 40px; color:inherit;
+	               left:-10px; top: 20px; width:100%; text-align:center; padding-right:20px;
+	               -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55); -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55); -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55); box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+                   behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position: relative; }
+
+.Rectangle_Title .Head { font-size: 18px; text-align: center; }
+.Rounded3dRibbonContent { padding:10px 20px; padding-top:35px; color:inherit; }
+
+
+/* Square3dRibbon CSS */
+.Square3dRibbon { margin:2.7em 0 0 0; background:#fff; border:1px solid #cecfcf;
+                   -moz-border-radius: 2px; -khtml-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+	               -moz-box-shadow: 0px 0px 8px #e4e3e3; -khtml-box-shadow: 0px 0px 8px #e4e3e3; -webkit-box-shadow: 0px 0px 8px #e4e3e3; box-shadow: 0px 0px 8px #e4e3e3;
+                   behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+.SquareRectangle_Title { background:#7f9db9; height: 40px; color:inherit;
+	               width:100%; text-align:center; top:20px;
+	               -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55); -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55); -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55); box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+                   behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position: relative; }
+
+.SquareRectangle_Title .Head { font-size: 18px; text-align: center; }
+.Square3dRibbonContent { padding:10px 20px; padding-top:35px; color:inherit; }
+.Square3dRibbon:before, .Square3dRibbon:after { z-index: -1; position: absolute; content: ""; bottom: 15px;
+  left: 10px; width: 50%; top: 80%; max-width:300px; 
+  background: #777; -webkit-box-shadow: 0 15px 10px #777; -moz-box-shadow: 0 15px 10px #777; box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); -o-transform: rotate(-3deg); -ms-transform: rotate(-3deg); transform: rotate(-3deg); behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+.Square3dRibbon:after { -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -o-transform: rotate(3deg); -ms-transform: rotate(3deg); transform: rotate(3deg); 
+                        right: 10px; left: auto; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+
+
+   
+/* SquareRibbonTitle CSS */
+.SquareRibbonTitle { margin:2.7em 0 0 0; background:#fff; border:1px solid #cecfcf;
+                   -moz-border-radius: 2px; -khtml-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+	               -moz-box-shadow: 0px 0px 8px #e4e3e3; -khtml-box-shadow: 0px 0px 8px #e4e3e3; -webkit-box-shadow: 0px 0px 8px #e4e3e3; box-shadow: 0px 0px 8px #e4e3e3;
+                   behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+.SquareRibbon_Title { background:#7f9db9; height: 40px; color:inherit;
+	               left:0px; top: 20px; width:95%; text-align:left; border-radius:0 2px 2px 0; -moz-border-radius:0 2px 2px 0; -webkit-border-radius:0 2px 2px 0;
+	               -moz-box-shadow: 0px 0px 2px #d7d5d5; -khtml-box-shadow: 0px 0px 2px #d7d5d5; -webkit-box-shadow: 0px 0px 2px #d7d5d5; box-shadow: 0px 0px 4px #d7d5d5;
+                   behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position: relative; float: left; }
+
+.SquareRibbon_Title .Head { padding-left:20px; font-size: 18px; }
+.SquareRibbonTitleContent { padding:10px 20px; padding-top:75px; color:inherit; }
+.SquareRibbonTitle:after { z-index: -1; position: absolute; content: ""; bottom: 15px; right: 10px; left: auto; width: 50%; top: 80%; max-width:300px;
+  background: #777; -webkit-box-shadow: 0 15px 10px #777; -moz-box-shadow: 0 15px 10px #777; box-shadow: 0 15px 10px #777; 
+  -webkit-transform: rotate(5deg); -moz-transform: rotate(5deg); -o-transform: rotate(5deg); -ms-transform: rotate(5deg); transform: rotate(5deg);
+  behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+
+
+  
+/* SquareRibbonCenterTitle CSS */
+.SquareRibbonCenterTitle { margin:2.7em 0 0 0; background:#fff; border:1px solid #cecfcf;
+                   -moz-border-radius: 2px; -khtml-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+	               -moz-box-shadow: 0px 0px 8px #e4e3e3; -khtml-box-shadow: 0px 0px 8px #e4e3e3; -webkit-box-shadow: 0px 0px 8px #e4e3e3; box-shadow: 0px 0px 8px #e4e3e3;
+                   behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+.SquareRibbonCenter_Title { background:#7f9db9; height: 40px; color:inherit;
+	                top: 20px; width:90%; text-align:center; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px;
+	               -moz-box-shadow: 0px 0px 2px #d7d5d5; -khtml-box-shadow: 0px 0px 2px #d7d5d5; -webkit-box-shadow: 0px 0px 2px #d7d5d5; box-shadow: 0px 0px 4px #d7d5d5;
+                   behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position: relative; margin:0 auto; }
+
+.SquareRibbonCenter_Title .Head { font-size: 18px; }
+.SquareRibbonCenterTitleContent { padding:10px 20px; padding-top:33px; color:inherit; }
+
+.SquareRibbonCenterTitle {
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+              position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc);
+}
+.SquareRibbonCenterTitle:before, .SquareRibbonCenterTitle:after {
+	content:""; position:absolute; z-index:-1; 
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8); -moz-box-shadow:0 0 20px rgba(0,0,0,0.8); box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%; bottom:0; left:10px; right:10px;
+    -moz-border-radius:100px / 10px; -webkit-border-radius:100px / 10px; border-radius:100px / 10px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+.SquareRibbonCenterTitle:after { right:10px; left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); -moz-transform:skew(8deg) rotate(3deg); -ms-transform:skew(8deg) rotate(3deg); -o-transform:skew(8deg) rotate(3deg); transform:skew(8deg) rotate(3deg);
+    behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+ 
+ 
+/* SquareTitle CSS */
+#SquareTitle{ background:#fff; /* Background Color Code */ border:1px solid #cecfcf; /* Border Color Code */ }
+.SquareTitle_Title { text-align:left; background: #468bcb; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+
+/* StateSquare_Title CSS */
+.StateSquare_Title { text-align:left; background:#E6E6E6; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+
+
+/* SquareTitleShadow CSS */
+#SquareTitleShadow { background:#fff; /* Background Color Code */ border:1px solid #cecfcf; /* Border Color Code */ }
+.SquareTitleShadow_Title { text-align:left; background: #468bcb; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+	
+/* SquareTitle CSS */
+#SquareTitleShadow { margin:2.7em 0 0 0; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .SquareTitleShadow_Title { height:30px; padding:2px 0 8px 20px; line-height:32px; }
+    .SquareTitleShadow_content { padding:15px 20px 10px 20px;}
+#SquareTitleShadow:before, #SquareTitleShadow:after { z-index: -1; position: absolute; content: ""; bottom: 25px; left: 10px; width: 50%; top: 80%; max-width:300px;
+  background: #777; -webkit-box-shadow: 0 35px 20px #777; -moz-box-shadow: 0 35px 20px #777; box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg); -moz-transform: rotate(-8deg); -o-transform: rotate(-8deg); -ms-transform: rotate(-8deg); transform: rotate(-8deg); behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc);
+}
+#SquareTitleShadow:after { right: 10px; left: auto;
+  -webkit-transform: rotate(8deg); -moz-transform: rotate(8deg); -o-transform: rotate(8deg); -ms-transform: rotate(8deg); transform: rotate(8deg); behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc);
+}    
+    
+                     
+/* SquareTitleWhite CSS */
+#SquareTitleWhite { background:#fff; /* Background Color Code */ border:1px solid #cecfcf; }
+.SquareTitleWhite_Title { text-align:left; background: #40689c; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+
+/* SquareBorderNoTitle CSS */
+#SquareBorderNoTitle { background:#fff; border:1px solid #bbb5b9; }
+
+                
+/* SquareNoTitle CSS */
+#SquareNoTitle { overflow:auto; background:#fff; /* Background Color Code */ }
+.SquareNoTitle_content { border:6px solid #b5b4b4; padding:10px; }
+           
+/*** End Change Color Code for Container ***/    
+            
+    
+/*** Shadow & Text Format for Container ***/ 
+
+/* BevelTitle CSS */
+#BevelTitle { margin:2.7em 0 0 0; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; border-radius: 10px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+    .BevelTitle_Title { height:30px; padding:2px 0 8px 20px; line-height:32px; color:inherit; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -ms-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .BevelTitle_content { padding:15px 20px; -webkit-border-radius: 0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -ms-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+
+/* BevelIcon_Title CSS */
+.BevelIcon_Title { height:30px; background:#4095e3; padding:2px 0 8px 20px; line-height:32px; color:inherit; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -ms-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .BevelIcon_Title .Title img { height:30px; padding:2px 8px 0 0; }         
+    
+/* BevelNoTitle CSS */
+#BevelNoTitle { margin:2.7em 0 0 0; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .BevelNoTitle_content { padding:20px 20px 12px 20px; border:1px solid #ccc; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc);  }
+  
+ 
+/* DentTitle CSS */
+#DentTitle{ margin:2.7em 0 0 0; -moz-border-radius: 35px 10px / 10px 35px; -webkit-border-radius: 35px 10px / 10px 35px; -ms-border-radius: 35px 10px / 10px 35px; border-radius: 35px 10px / 10px 35px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .DentTitle_Title { height:30px; padding:2px 0 8px 20px; line-height:32px; color:inherit; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0;-ms-border-radius:10px 10px 0 0; border-radius: 10px 10px 0 0; position:relative; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .DentTitle_content { padding:18px 20px 10px 20px;
+                         -webkit-border-radius: 0 0 12px 12px; -moz-border-radius: 0 0 12px 12px; -ms-border-radius: 0 0 12px 12px; border-radius: 0 0 12px 12px; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+
+/* DentTitle CSS */
+.DefaultTitle { margin: 2.7em 0 0 0; }       
+    
+/* DentNoTitle CSS */
+#DentNoTitle{ margin:2.7em 0 0 0; -moz-border-radius: 25px 10px / 10px 25px;  -webkit-border-radius: 25px 10px / 10px 25px; -ms-border-radius: 25px 10px / 10px 25px; border-radius: 25px 10px / 10px 25px; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .DentNoTitle_content { padding:20px 20px 0px 20px; border:1px solid #cecfcf; -moz-border-radius: 25px 10px / 10px 25px;  -webkit-border-radius: 25px 10px / 10px 25px; -ms-border-radius: 25px 10px / 10px 25px; border-radius: 25px 10px / 10px 25px; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    
+ 
+/* DentTitleSolid CSS */
+#DentTitleSolid{ margin:2.7em 0 0 0; padding:10px 20px; -moz-border-radius: 35px 10px / 10px 35px; -webkit-border-radius: 35px 10px / 10px 35px; -ms-border-radius: 35px 10px / 10px 35px; border-radius: 35px 10px / 10px 35px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .DentTitleSolid_Title .Head { color:inherit; }
+    .DentTitleSolid_content { padding-top:15px; }
+    
+ 
+/* LeafTitle CSS */
+#LeafTitle{ margin:2.7em 0 0 0; -webkit-border-radius:35px 0; -moz-border-radius:35px 0; -ms-border-radius:35px 0; border-radius:35px 0; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .LeafTitle_Title { height:30px; padding:2px 0 8px 20px; line-height:32px; -webkit-border-radius:35px 0 0 0; -moz-border-radius:35px 0 0 0; -ms-border-radius:35px 0 0 0; border-radius:35px 0 0 0; position:relative; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .LeafTitle_content { padding:15px 20px 10px 20px;
+                         -webkit-border-radius:0 0 35px 0; -moz-border-radius:0 0 35px 0; -ms-border-radius:0 0 35px 0; border-radius:0 0 35px 0; position:relative; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+
+/* LeafIcon_Title CSS */
+.LeafIcon_Title { background:#3d7bb3; height:30px; padding:2px 0 8px 10px; line-height:32px; -webkit-border-radius:35px 0 0 0; -moz-border-radius:35px 0 0 0; -ms-border-radius:35px 0 0 0; border-radius:35px 0 0 0; position:relative; behavior:url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+  .LeafIcon_Title .Title img { height:30px; padding:2px 8px 0 5px; }   
+
+/* LeafTitleSolid CSS */
+#LeafTitleSolid{ margin:2.7em 0 0 0; padding:10px 20px; -webkit-border-radius:35px 0; -moz-border-radius:35px 0; -ms-border-radius:35px 0; border-radius:35px 0; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .LeafTitleSolid_Title { line-height:20px; }
+    .LeafTitleSolid_Title .Head { color:inherit; }
+    .LeafTitleSolid_content { padding:12px 0 0 0;}
+    
+      
+/*  RoundedBorderNoTitle CSS */
+.RoundedBorderNoTitle { margin:2.7em 0 0 0; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+.RoundedBorderNoTitleBorder { padding:12px; }
+.Border { overflow:auto; border:2px dashed #22599f; }
+.RoundedBorderNoTitle_content { padding:10px 20px; }
+
+           
+/*  RoundedNoTilte CSS */
+#RoundedNoTilte { margin:2.7em 0 0 0; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); position:relative; }
+    .RoundedNoTilte_content { padding:15px 20px 10px 20px; border-bottom:5px solid #356995; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; overflow:auto; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+
+/* SquareBorderNoTitle CSS */
+#SquareBorderNoTitle { margin:2.7em 0 0 0; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }       
+    .SquareBorderNoTilte_content { padding:15px 20px 10px 20px; border-bottom:5px solid #356995; overflow:auto; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+
+/* StateSquare_Title CSS */
+.StateSquare_Title { height:30px; padding:2px 0 8px 20px; line-height:32px; }
+    .StateSquareTitle_content { padding:0 0 10px 0; background:#F4F4F4; border-bottom:5px solid #356995; }
+
+
+/* SquareTitle CSS */
+#SquareTitle{ margin:2.7em 0 0 0; position:relative; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+    .SquareTitle_Title { height:30px; padding:2px 0 8px 20px; line-height:32px; }
+    .SquareTitle_content { padding:15px 20px 10px 20px; }    
+
+/* SquareTitleWhite CSS */
+#SquareTitleWhite { margin:2.7em 0 0 0; }
+    .SquareTitleWhite_Title { height:30px; padding:2px 0 8px 10px; line-height:32px; }
+    .SquareTitleWhite_content { padding:15px 20px 10px 20px; text-align:justify; }
+    .SquareTitleWhite_Title .Title img { height:30px; padding:2px 8px 0 0; } 
+        
+/* SquareNoTitle CSS */
+#SquareNoTitle { margin:2.7em 0 0 0; behavior: url(/Portals/_default/Skins/QuoteProNewSkin/PIE.htc); }
+
+/* SquareNoTitle CSS */
+.TitleSolidBorder { margin:2.7em 0 0 0; }
+.TitleSolidBorder_Title { border-bottom:2px dashed #c3c6ca; }
+.TitleSolidBorder_Title .Head { color:inherit; line-height:20px; font-size:18px; font-family:'titillium',Tahoma; }
+.TitleSolidBorder_content { padding-top:10px;}
+
+/* TitleNoBorder CSS */
+.TitleNoBorder { margin:2.7em 0 0 0; padding:0px; }
+    .TitleNoBorder_Title { color:#fff; }
+    .TitleNoBorder_Title .Head { font-size:24px; font-weight:bold; font-family:'titillium',Tahoma; }
+
+
+/*DotNetNuke Footer for Mobile */
+@media handheld, only screen and (max-width:767px)  
+{
+    /* TitleSolid CSS */
+    .TitleSolid_Title { text-align:center; }
+    .TitleSolidBorder_Title { padding-left:0; text-align:center; }
+    .SquareTitleWhite_Title { padding-left:0; text-align:center; }
+    .SquareTitle_Title { padding-left:0; text-align:center; }
+    .LeafTitleSolid_Title { padding-left:0; text-align:center; }
+    .LeafTitle_Title { padding-left:0; text-align:center; }
+    .DentTitle_Title { padding-left:0; text-align:center; }
+    .DentTitleSolid_Title { padding-left:0; text-align:center; }
+    .BevelTitle_Title { padding-left:0; text-align:center; }
+    
+    .TitleSolidBorder { margin:0em 0 0 0; padding:0 0 0px 0; }
+    .TitleSolidBorder_content { padding:10px 10px 0 10px; }
+
+    .DefaultTitle { text-align:center; }
+    .DefaultTitle .Head { font-size:28px; }
+}
+
+
+
+
+
+
+
+
+
+

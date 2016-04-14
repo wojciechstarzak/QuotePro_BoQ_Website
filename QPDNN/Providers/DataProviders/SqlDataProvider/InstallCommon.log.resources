@@ -1,0 +1,87 @@
+System.Data.SqlClient.SqlException (0x80131904): Cannot find the user 'quotepro', because it does not exist or you do not have permission.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScriptInternal(String connectionString, String script)
+ClientConnectionId:8d837526-e5b6-4c19-97e8-01667dbb00a8
+Error Number:15151,State:1,Class:16
+
+DECLARE @command nvarchar(4000)
+
+SET @command = 'GRANT EXECUTE ON [dbo].aspnet_RegisterSchemaVersion TO ' + QUOTENAME(user)
+EXEC (@command)
+
+System.Data.SqlClient.SqlException (0x80131904): Cannot find the user 'quotepro', because it does not exist or you do not have permission.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScriptInternal(String connectionString, String script)
+ClientConnectionId:8d837526-e5b6-4c19-97e8-01667dbb00a8
+Error Number:15151,State:1,Class:16
+
+DECLARE @command nvarchar(400)
+SET @command = 'GRANT EXECUTE ON [dbo].aspnet_AnyDataInTables TO ' + QUOTENAME(user)
+EXEC (@command)
+
+System.Data.SqlClient.SqlException (0x80131904): Cannot find the user 'quotepro', because it does not exist or you do not have permission.
+Creating the vw_aspnet_Applications view...
+Creating the vw_aspnet_Users view...
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScriptInternal(String connectionString, String script)
+ClientConnectionId:8d837526-e5b6-4c19-97e8-01667dbb00a8
+Error Number:15151,State:1,Class:16
+
+/*************************************************************/
+/*************************************************************/
+
+IF (NOT EXISTS (SELECT name
+                FROM sys.objects
+                WHERE (name = N'vw_aspnet_Applications')
+                  AND (type = 'V')))
+BEGIN
+  PRINT 'Creating the vw_aspnet_Applications view...'
+  EXEC('
+  CREATE VIEW [dbo].[vw_aspnet_Applications]
+  AS SELECT [ApplicationName], [LoweredApplicationName], [ApplicationId], [Description]
+  FROM [dbo].[aspnet_Applications]
+  ')
+END
+
+/*************************************************************/
+/*************************************************************/
+
+IF (NOT EXISTS (SELECT name
+                FROM sys.objects
+                WHERE (name = N'vw_aspnet_Users')
+                  AND (type = 'V')))
+BEGIN
+  PRINT 'Creating the vw_aspnet_Users view...'
+  EXEC('
+  CREATE VIEW [dbo].[vw_aspnet_Users]
+  AS SELECT [ApplicationId], [UserId], [UserName], [LoweredUserName], [MobileAlias], [IsAnonymous], [LastActivityDate]
+  FROM [dbo].[aspnet_Users]
+  ')
+END
+
+/*************************************************************/
+/*************************************************************/
+DECLARE @command nvarchar(4000)
+
+SET @command = 'REVOKE EXECUTE ON [dbo].aspnet_RegisterSchemaVersion from ' + QUOTENAME(user)
+EXEC (@command)
+
+
