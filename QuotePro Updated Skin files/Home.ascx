@@ -36,38 +36,38 @@ All Rights Reserved.
 
 <!-- container -->
 <div id="MainWrapper" CustomSection="edtPage" CustomTag="#MainWrapper" UserText="Main Wrapper" DisabledControls="#BackgroundImage, #Transparency, #FontColor, #BorderColor, .BgColorGrad" WidthTag="#MainWrapper">
-     <header id="Header" CustomSection="edtPage" CustomTag="#Header" UserText="Page Header" DisabledControls="#BackgroundImage, #FontColor" WidthTag="#Header">
-         <div class="row navRow">
-         <div class="col-md-10 col-md-offset-1">    
-            <nav role="navigation" class="navbar navbar-default">
-                   <div class="navbar-header">
-                       <a class="navbar-brand" href="#">
+     <header id="Header" CustomSection="edtPage" CustomTag="#Header" UserText="Page Header" DisabledControls="#BackgroundImage, #FontColor" WidthTag="#Header">  
+         <div class="row">
+             <div class="col-md-2 col-md-offset-1 col-xs-12">
+                   <a class="navbar-brand" href="#">
                             <img alt="QuotePro Logo" class="img-responsive" src="<%= SkinPath %>images/logo.gif" />
-                          </a>
-                      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                      </button>
-                      </div>
-                 <div id="navbarCollapse" class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav" id="navbar-nav">
-                          <li class="active"><a href="#About">About</a></li>
-                          <li><a href="#Features">Features</a></li> 
-                          <li><a href="#Pricing">Pricing</a></li> 
-                          <li><a href="#Support">Support</a></li> 
-                          <li><a href="#Contact">Contact</a></li> 
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                        </ul>
-                  </div>
-                </nav>
-            </div>
-        </div>
-        </header><!-- close Header  -->
+                   </a>
+             </div>
+             <div class="col-md-4 col-md-offset-1">
+                         <nav role="navigation" class="navbar navbar-default">
+                             <div class="row">
+                             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                              </button>
+                             </div>
+                         <div id="navbarCollapse" class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav" id="navbar-nav">
+                                  <li class="active"><a href="#About">About</a></li>
+                                  <li><a href="#Features">Features</a></li> 
+                                  <li><a href="#Pricing">Pricing</a></li> 
+                                  <li><a href="#Support">Support</a></li> 
+                                  <li><a href="#Contact">Contact</a></li> 
+                                </ul>
+                          </div>
+                    </nav>
+                </div>
+             <div id="TopRightnavPane" class="col-md-2 spmodule col-md-offset-1" runat="server">
+             </div>
+         </div>
+    </header><!-- close Header  -->
     <div id="container" CustomSection="edtPage" CustomTag="#container" UserText="Main Container" DisabledControls="#FontColor, #BorderColor, #Transparency, .MainStyle" class="container-fluid">
 
         <div id="HeaderTop" CustomSection="edtPage" CustomTag="#HeaderTop" UserText="Header Top" DisabledControls="#BorderColor,#BackgroundImage,#Transparency" WidthTag="#HeaderTop"> 
@@ -207,9 +207,9 @@ All Rights Reserved.
                     <div id="ShowcaseC" class="col-md-3 LeftC spmodule" runat="server"></div>
                     <div id="ShowcaseD" class="col-md-3 LeftC spmodule" runat="server"></div>
                 </div> <!-- close 4Columns row  -->
-                <!-- steps rows -->
 
-                <div class="row">
+                <!-- steps rows -->
+                    <div class="row">
                     <div id="LeftSide1Pane" class="col-md-3 LeftC spmodule" runat="server"></div>  
                     <div id="MainCenter" class="col-md-6">
                         <div class="row">
@@ -401,7 +401,7 @@ All Rights Reserved.
  
 
 <!----------Back to Top Code - MUST COPY------------>
-<div id="backtotop"> <!-- Back to Top Button -->
+<div id="backtotop" style="display:none;"> <!-- Back to Top Button -->
    <a href="#">
       <img src="<%= SkinPath %>images/back_to_top_btn.png" border="0" alt="Back to TOP" />
    </a>
