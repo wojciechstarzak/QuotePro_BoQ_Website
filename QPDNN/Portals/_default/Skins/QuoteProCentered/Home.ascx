@@ -216,13 +216,13 @@ All Rights Reserved.
 
 
                 <!-- steps rows -->
-                <div class="row stepsRow">
+                <div class="row">
                     <div id="FeatureA" class="col-md-4 LeftC spmodule" runat="server"></div>
                     <div id="FeatureB" class="col-md-4 LeftC spmodule" runat="server"></div>
                     <div id="FeatureC" class="col-md-4 LeftC spmodule" runat="server"></div>
                 </div> <!-- close 3Columns row  -->
 
-                <div class="row stepsRow">
+                <div class="row">
                     <div id="ShowcaseA" class="col-md-3 LeftC spmodule" runat="server"></div>
                     <div id="ShowcaseB" class="col-md-3 LeftC spmodule" runat="server"></div>
                     <div id="ShowcaseC" class="col-md-3 LeftC spmodule" runat="server"></div>
@@ -312,7 +312,7 @@ All Rights Reserved.
 
             </div> <!-- close MPageBody -->
 
-            <div id="GreyBodyBottom" class="GreyBodyBottom" CustomSection="edtPage" CustomTag="#GreyBodyBottom" UserText="Grey Body Bottom" DisabledControls="#FontColor, #BorderColor" WidthTag="#GreyBodyBottom">           
+            <div id="GreyBodyBottom" CustomSection="edtPage" CustomTag="#GreyBodyBottom" UserText="Grey Body Bottom" DisabledControls="#FontColor, #BorderColor" WidthTag="#GreyBodyBottom">           
                 <div class="row">
                     <div id="GreyBottomContentPane" class="col-md-12 spmodule" runat="server"></div>
                 </div>
@@ -341,6 +341,12 @@ All Rights Reserved.
                     <div id="GreyColumnC" class="col-md-2 LeftC spmodule" runat="server"></div>
                     <div id="GreyColumnD" class="col-md-2 LeftC spmodule" runat="server"></div>
                     <div id="GreyColumnE" class="col-md-2 LeftC spmodule" runat="server"></div>
+                </div> <!-- close 5Columns row  -->
+
+                <div class="row">
+                    <div id="GreyColumnF" class="col-md-2 col-md-offset-3 LeftC spmodule" runat="server"></div>
+                    <div id="GreyColumnG" class="col-md-2 LeftC spmodule" runat="server"></div>
+                    <div id="GreyColumnH" class="col-md-2 LeftC spmodule" runat="server"></div>
                 </div> <!-- close 5Columns row  -->
 
             </div> <!-- close GreyBodyBottom -->          

@@ -607,15 +607,19 @@ opacity: 1;
     background-color: #e6e6e6;
 }
 
-.stepsRow{
-    background-color: #b3b3b3;
+#GreyBodyBottom{
+    background-color: #e6e6e6;
 }
 
-.GreyBodyBottom{
-    background-color: #808080;
+#GreyBodyBottom:before {
+    content: "";
+    position: absolute;
+    left: 48%;
+    border: 30px solid transparent;
+    border-top: 30px solid white;
 }
 
-.GreyVersionShowcase{
+#GreyVersionShowcase{
     background-color: #808080;
 }
 
@@ -833,4 +837,33 @@ opacity: 1;
 
 .glyphicon-chevron-left, .glyphicon-chevron-right{
     color: #00c15d;
+}
+
+.stepImage{
+   display: inline !important;
+   margin-top: 4em; 
+}
+
+.stepHeading1{
+    font-size: 150%;
+    color: #57bcda;
+    margin-bottom: 1.5em;
+}
+
+.stepHeading2{
+    font-size: 150%;
+    color: #808080;
+    margin-bottom: 1.5em;
+}
+
+.stepHeading3{
+    font-size: 150%;
+    color: #00c15d;
+    margin-bottom: 1.5em;
+}
+
+.stepText{
+    font-size: 110%;
+    color: #b3b3b3;
+    margin-bottom: 8em;
 }
