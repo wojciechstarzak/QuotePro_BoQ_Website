@@ -32,6 +32,27 @@ All Rights Reserved.
 
 <script>
     $('body').scrollspy({ target: '#navbar-nav' })
+
+    $(document).ready(function () { 
+    setCarouselHeight('#customerCarousel');
+    })
+
+    function setCarouselHeight(id) {
+        var slideHeight = [];
+
+        $(id).find('.item').each(function () {
+            // add all slide heights to an array
+            slideHeight.push($(this).height());
+        });
+
+        // find the tallest item
+        max = Math.max.apply(null, slideHeight);
+
+        // set the slide's height
+        $(id + ' .carousel-inner').each(function () {
+            $(this).css('height', (max + 10) + 'px');
+        });
+    }
 </script>
 
 <!-- container -->

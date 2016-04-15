@@ -44,7 +44,7 @@ max-width : 100%;
 height: 84px;
 }
 
-#SliderBg{background-color : #b3b3b3;
+#SliderBg{background-color : white;
 background-image :none;
  background-repeat: no-repeat;
 background-position : 50% 0%;
@@ -604,7 +604,7 @@ opacity: 1;
 }
                                                                                                                                                                                                                                                                                                
 #GreyBodyTop{
-    background-color: #b3b3b3;
+    background-color: #e6e6e6;
 }
 
 .stepsRow{
@@ -640,12 +640,13 @@ opacity: 1;
     color: #00c15d;
     z-index: 10;
     margin-top: 0;
+    margin-bottom: 0.6em;
 }
 
 #dnn_SpeedyCustomizer > div:nth-child(2) > div > div > div{
     height: 100%;
 }
-
+    
 .imageMan{
     position: absolute;
     bottom: 2.1em;
@@ -682,7 +683,13 @@ opacity: 1;
     text-align: right;
 }
 
-.aboutHeading{
+.aboutHeading {
+    font-weight: bold;
+    text-align: center;
+    color: #b3b3b3;
+}
+
+.featuresHeading{
     font-weight: bold;
     text-align: center;
     color: #b3b3b3;
@@ -696,8 +703,23 @@ opacity: 1;
     margin-bottom: 0;
 }
 
+.simpleProcessHeading{
+    text-align: center;
+    color: #404040;
+    font-size: 300%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.simpleProcessText{
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 130%;
+    margin-top: 0;
+}
+
 .divider{
-    border-top: 2px solid #00c15d;
+    border-top: 2px solid #00c15d !important;
 }
 
 .Customizer{
@@ -746,4 +768,69 @@ opacity: 1;
 
 .dividerMargin{
     margin-bottom: 2em;
+}
+
+.adHeadings{
+    font-size: 280%;
+    color: #00c15d;
+}
+
+.adHeadingsCaps{
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#container > div:nth-child(4){
+    margin-bottom: 11.4em;
+}
+.quoteProAdRow{
+    background-color: #e6e6e6;
+    margin-bottom:40px; 
+    margin-top:40px;
+}
+
+#dnn_GreyContentPane{
+    background-color: #e6e6e6;
+    
+}
+
+#dnn_SliderPane{
+    padding: 0;
+    background-image: url(/portals/0/images/slider.jpg);
+    background-repeat: no-repeat;
+    height: 40em;
+        
+}
+
+.carousel-inner {
+    color:white;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    align-content:flex-start;
+}
+.carousel-content > div{
+  text-align:center;
+}
+
+.carousel-control{
+    height: 22em;
+    background-image: none !important;
+}
+
+.customerCarousel{
+    height: 20em;
+}
+
+.sliderSmallText{
+    font-size: 120%;
+}
+
+.buildItLogo{
+    margin-top: 6em;
+    margin-bottom: 1em;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right{
+    color: #00c15d;
 }
