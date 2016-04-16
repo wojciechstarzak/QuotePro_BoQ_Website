@@ -408,9 +408,19 @@ All Rights Reserved.
                     <div id="FooterC" class="col-md-3 LeftC spmodule" runat="server"></div>
                     <div id="FooterD" class="col-md-3 LeftC spmodule" runat="server"></div>
                 </div> <!-- close FooterMain  -->
+                 <div class="row">
+                    <div id="FooterA1" class="col-md-2 col-md-offset-1 LeftC spmodule" runat="server"></div>
+                    <div id="FooterB1" class="col-md-2 LeftC spmodule" runat="server"></div>
+                    <div id="FooterC1" class="col-md-2 LeftC spmodule" runat="server"></div>
+                    <div id="FooterD1" class="col-md-2 LeftC spmodule" runat="server"></div>
+                    <div id="FooterE1" class="col-md-2 LeftC spmodule" runat="server"></div>
+                </div> <!-- close FooterMain  -->
 
                 <div class="row">
                     <div id="FooterE" class="col-md-10 col-md-offset-1 LeftC spmodule" runat="server"></div>
+                </div> <!-- close FooterMain  -->
+                    <div class="row">
+                <div id="FooterE2" class="col-md-8 col-md-offset-2 LeftC spmodule" runat="server"></div>
                 </div> <!-- close FooterMain  -->
             
                 <div class="row">

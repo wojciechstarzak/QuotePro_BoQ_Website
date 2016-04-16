@@ -68,17 +68,17 @@ opacity: 1;
 max-width : 100%;
 }
 
-#MainFooter{background-color : #404040;
-background-image : url(/Portals/_default/Skins/Demophon/images/Footer_Bg.png);
- background-repeat: no-repeat;
+#MainFooter{background-color : #4D4D4D;
+background-repeat: no-repeat;
 background-position : 50% 0%;
 border: none;
-color : #ECECEC;
 -moz-opacity:1;
 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 -khtml-opacity: 1;
 opacity: 1;
 max-width : 100%;
+margin: 0 !important;
+width: 100%;
 }
 
 .btn-inverse, .LearnMore a, .LearnMore2 a, .BdAreaTopCustom{background-color : #00c15d;
@@ -621,7 +621,7 @@ opacity: 1;
 #GreyBodyBottom:before {
     content: "";
     position: absolute;
-    left: 48%;
+    left: 47.7%;
     border: 30px solid transparent;
     border-top: 30px solid white;
 }
@@ -957,4 +957,31 @@ opacity: 1;
 
 .pricingPanel{
     margin-bottom: 9.2em;
+}
+
+.subscribeButton{
+    background-color:transparent;
+    border: #00c15d solid 1px;
+    color: #00c15d;
+}
+
+.footerAnchor{
+    color: white;
+    font-size: 107%;
+}
+
+.footingHeaders{
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+.footerText{
+    color: white;
+    margin-bottom: 0.3em;
+    font-size: 107%;
+}
+
+.noPaddingSides > ul {
+    margin-left: 0;
+    list-style-type: none;
 }
