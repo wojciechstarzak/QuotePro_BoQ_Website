@@ -34,7 +34,7 @@ All Rights Reserved.
     $('body').scrollspy({ target: '#navbar-nav' })
 
     $(document).ready(function () { 
-    setCarouselHeight('#customerCarousel');
+    //setCarouselHeight('#customerCarousel');
     })
 
     function setCarouselHeight(id) {
@@ -351,7 +351,7 @@ All Rights Reserved.
 
             </div> <!-- close GreyBodyBottom -->          
 
-            <div class="row">
+            <div class="row" id="centeredWhite">
                 <div id="CenteredonWhiteA" class="col-md-6 col-md-offset-3 spmodule" runat="server"></div>
             </div>
             <div class="row">
@@ -365,29 +365,35 @@ All Rights Reserved.
                 <div class="row">
                     <div id="GreyVersionShowcase1" class="col-md-12 spmodule" runat="server"></div>
                 </div>
+                <div class="row">
+                    <div id="GreyVersionShowcase15" class="col-md-8 col-md-offset-2 spmodule" runat="server"></div>
+                </div>
+                <div class="row">
+                    <div id="GreyVersionShowcase16" class="col-md-10 col-md-offset-1 spmodule" runat="server"></div>
+                </div>
 
                 <div class="row">
                     <div id="GreyVersionShowcase2" class="col-md-6 LeftC spmodule" runat="server"></div>
-                    <div id="Div3" class="col-md-6 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase3" class="col-md-6 LeftC spmodule" runat="server"></div>
                 </div> <!-- close 2Columns row  -->
 
                 <div class="row">
-                    <div id="Div4" class="col-md-4 LeftC spmodule" runat="server"></div>
-                    <div id="Div5" class="col-md-4 LeftC spmodule" runat="server"></div>
-                    <div id="Div6" class="col-md-4 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase4" class="col-md-4 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase5" class="col-md-4 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase6" class="col-md-4 LeftC spmodule" runat="server"></div>
                 </div> <!-- close 3Columns row  -->
 
                 <div class="row">
-                    <div id="Div7" class="col-md-3 LeftC spmodule" runat="server"></div>
-                    <div id="Div8" class="col-md-3 LeftC spmodule" runat="server"></div>
-                    <div id="Div9" class="col-md-3 LeftC spmodule" runat="server"></div>
-                    <div id="Div10" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase7" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase8" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase9" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase10" class="col-md-3 LeftC spmodule" runat="server"></div>
                 </div> <!-- close 4Columns row  -->
 
                 <div class="row">
-                    <div id="Div12" class="col-md-3 col-md-offset-3 LeftC spmodule" runat="server"></div>
-                    <div id="Div13" class="col-md-3 LeftC spmodule" runat="server"></div>
-                    <div id="Div14" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase12" class="col-md-3 col-md-offset-3 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase13" class="col-md-3 LeftC spmodule" runat="server"></div>
+                    <div id="GreyVersionShowcase14" class="col-md-3 LeftC spmodule" runat="server"></div>
                 </div> <!-- close 5Columns row  -->
 
             </div> <!-- close GreyBodyBottom -->    
