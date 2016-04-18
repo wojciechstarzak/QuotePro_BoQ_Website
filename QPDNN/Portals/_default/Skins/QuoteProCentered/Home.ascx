@@ -76,11 +76,11 @@ All Rights Reserved.
                              </div>
                          <div id="navbarCollapse" class="collapse navbar-collapse">
                                 <ul class="nav navbar-nav" id="navbar-nav">
-                                  <li class="active"><a href="#About">About</a></li>
-                                  <li><a href="#Features">Features</a></li> 
-                                  <li><a href="#Pricing">Pricing</a></li> 
-                                  <li><a href="#Support">Support</a></li> 
-                                  <li><a href="#Contact">Contact</a></li> 
+                                  <li class="active"><a href="#ImageBg">About</a></li>
+                                  <li><a href="#dnn_LeftSidePane">Features</a></li> 
+                                  <li><a href="#centeredWhite">Pricing</a></li> 
+                                  <li><a href="#MainFooter">Support</a></li> 
+                                  <li><a href="#MainFooter">Contact</a></li> 
                                 </ul>
                           </div>
                     </nav>
@@ -425,7 +425,7 @@ All Rights Reserved.
             
                 <div class="row">
                     <div class="FooterCopyRight">                    
-                    <div class="col-md-7">
+                    <div class="col-md-12 copyRightFooter">
                         <div class="row">
                             <div id="FooterNav" class="col-md-12 FooterNav spmodule" runat="server"> </div>
                         </div>  

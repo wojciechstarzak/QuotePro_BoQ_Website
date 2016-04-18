@@ -236,6 +236,9 @@ color : #00c15d;
 opacity: 1;
 }
 
+.navbar{
+     z-index: 1000;
+}
 
 .BevelTitle_Title{background-color : #00c15d;
 background-image : none;
@@ -602,7 +605,12 @@ color : rgb(255, 255, 255);
 -khtml-opacity: 1;
 opacity: 1;
 }
-                                                                                                                                                                                                                                                                                               
+
+#dnn_TopRightnavPane{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+} 
+                                                                                                                                                                                                                                                                                              
 #GreyBodyTop{
     background-color: #e6e6e6;
 }
@@ -628,6 +636,7 @@ opacity: 1;
 
 #GreyVersionShowcase{
     background-color: #808080;
+    background: #808080 URL("/Portals/0/Images/version2Large.png") 0% 0% no-repeat;
 }
 
 #dnn_ctr472_HtmlModule_lblContent > div:nth-child(2){
@@ -652,6 +661,30 @@ opacity: 1;
     z-index: 10;
     margin-top: 0;
     margin-bottom: 0.6em;
+    font-family: 'lato-light';
+}
+
+.loginAnchor{
+    color: #00c15d;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.anchorSignUpColumn{
+    margin-top: 3em;
+}
+
+.signNavUpButton {
+    font-size:140%;
+    background-color: white;
+    border: 1px solid #00c15d;
+    color: #00c15d;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-bottom: 0.7em;
+    padding-top: 0.7em;
+    margin-top: 1.3em;
+    font-weight: bold;
 }
 
 #dnn_SpeedyCustomizer > div:nth-child(2) > div > div > div{
@@ -663,6 +696,12 @@ opacity: 1;
     bottom: 2.1em;
     right: 7em;
     z-index: 1;
+}
+
+.version2Top{
+    position: absolute;
+    top: -37.9em;
+    left:0;
 }
 
 .getStartedButton{
@@ -691,6 +730,7 @@ opacity: 1;
 
 .subHeadingSpan{
      font-size: 210%;
+     font-family: 'lato-light';
 }
 
 .subHeadingWhiteRow{
@@ -711,6 +751,7 @@ opacity: 1;
     font-weight: bold;
     text-align: center;
     color: #b3b3b3;
+    margin-top:3em;
 }
 
 .setsApartHeading{
@@ -908,11 +949,23 @@ opacity: 1;
     margin-top: 2em; 
 }
 
+.quoteProGrayLogo{
+    display: inline !important;
+    margin-top: 5em;
+    margin-left: 2.5em;
+}
+
 .whatsNewImage1{
     display: inline !important;
     margin-top: 2em; 
     margin-bottom: 0.5em;
 }
+
+
+.whatsNewPanel{
+   margin-bottom: 8em;
+}
+
 
 .stepHeading1{
     font-size: 150%;
@@ -963,20 +1016,35 @@ opacity: 1;
     background-color:transparent;
     border: #00c15d solid 1px;
     color: #00c15d;
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+    font-size: 100%;
+    padding-right: 3.3em;
+    padding-left: 3.3em;
+}
+
+.subscribeButton:hover{
+    background-color: #00c15d;
+    color: white;
+    border: white solid 1px;
 }
 
 .footerAnchor{
-    color: white;
+    color: #b3b3b3;
     font-size: 107%;
+    margin-bottom: 0.3em;
+    cursor: pointer;
+    
 }
 
 .footingHeaders{
-    color: white;
+    color: #b3b3b3;
     margin-bottom: 1.5em;
+    font-family: 'lato-light';
 }
 
 .footerText{
-    color: white;
+    color: #b3b3b3;
     margin-bottom: 0.3em;
     font-size: 107%;
 }
@@ -984,4 +1052,170 @@ opacity: 1;
 .noPaddingSides > ul {
     margin-left: 0;
     list-style-type: none;
+}
+
+.contactFooter{
+    margin-left: 1em;
+    color: #b3b3b3;
+}
+
+.areaFooter{
+    margin-left: 1em;
+    color: #b3b3b3;
+}
+
+.appFooter{
+    margin-left: 1em;
+    color: #b3b3b3;
+}
+
+.newsFooter{
+    color: #b3b3b3;
+    
+}
+
+.footingHeaderNews{
+    margin-top: 1em !important;
+}
+
+.appFooter > ul > li{
+    margin-bottom: 0.3em
+}
+
+.linkRow{
+    border-top: 1px solid #b3b3b3;
+    margin-top: 2.2em;
+    margin-bottom: 2.2em;
+}
+
+.footerLinkDiv{
+    margin-top: 1.4em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.footerLinks{
+    font-size:110%;
+    color: #b3b3b3;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.Copyright{
+    width: 100%;
+}
+
+.copyRightFooter, .Copyright{
+    background-color: #333333;
+}
+
+.retailerButton{
+    color: white;
+    border: 1px solid white;
+}
+
+.contractorButton{
+    color: white;
+    border: 1px solid white;
+}
+ 
+.chooseProductHeading{
+    color: white;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .quoteProGrayLogo{
+    margin-left: 0;
+}
+
+.setApartImages{
+    display: inline;
+}
+
+.imageMan{
+    display: hidden;
+}
+
+#customerCarousel{
+    display: hidden;
+}
+
+.setApartHeadings{
+    text-align: center;
+}
+
+.setApartText{
+    text-align: center !important;
+}
+
+.signUpButton{
+    margin-left: 2.3em;
+    
+}
+
+.pricingText{
+    color: white;
+}
+
+.version2Large{
+    display: hidden;
+}
+
+.imageMan {
+    display: hidden;
+}
+
+.stepImage{
+    margin-top: 0;
+}
+
+.stepText{
+    margin-bottom: 0;
+}
+
+.appFooter{
+    text-align: center;
+}
+
+.contactFooter{
+    text-align: center;
+}
+
+.footerHeadings{
+    text-align: center;
+}
+
+.newsFooter{
+    text-align: center;
+}
+
+.areaFooter{
+    text-align: center;
+}
+
+#GreyVersionShowcase{
+    background: #808080;
+}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    
 }
